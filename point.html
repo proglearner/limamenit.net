@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Point Anda</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--external css-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pointstyle.css">
+ </head>
+ <body>
+  <!--header-->
+  <script src="header.js"></script>
+  Total Point : <div class="var" id="total_point"></div><br><br>
+  <!--Point info-->
+  <div style="background-image:url('asset/pointbg.png'); background-size:cover;" id="point_info_cont_cont">
+   <div id="point_info_container">
+    <h1 style="font-size:30px;" id="point_info">Dapatkan lebih banyak point dengan memesan buah dan sayur lokal.<br>
+    Tukarkan point dengan hadiah menarik!</h1><br><br>
+    <div class="contianer row">
+     <div class="col" style="text-align:center;" id="a500">
+      <img src="asset/500pts.png" style="width:200px;"><br>
+      <span>500 points<br>Pisang</span>
+     </div>
+     <div class="col" style="text-align:center;" id="a1000">
+      <img src="asset/1000pts.png" style="width:200px;"><br>
+      <span>1000 points<br>Susu</span>
+     </div>
+     <div class="col" style="text-align:center;" id="a5000">
+      <img src="asset/5000pts.png" style="width:200px;"><br>
+      <span>5000 points<br>Tiket Bioskop</span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="js/element_manipulator.js"></script>
+  <script src="js/pointjs.js"></script>
+  <script src="footer.js"></script>
+ </body>
+</html>

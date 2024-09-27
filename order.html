@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Kode Pesanan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--external css-->
+  <link rel="stylesheet" href="css/main.css">
+ </head>
+ <body style="text-align:center;">
+  <!--header-->
+  <script src="header.js"></script>
+  <img src="asset/logo.png" width="300" height="261"><br>
+  <span id="succ"></span>
+  <script>
+   succ = document.querySelector ("#succ");
+   code = "";
+   for (i = 0; i < 6; i++) {
+    code += Math.trunc(Math.random ()*10);
+   }
+   succ.innerHTML = `Pesanan anda telah kami terima. Tunjukkan nomor tiket ini ketika mengambil makanan di kantin : ${code}`;
+  </script>
+  <script src="js/element_manipulator.js"></script>
+  <script src="footer.js"></script>
+ </body>
