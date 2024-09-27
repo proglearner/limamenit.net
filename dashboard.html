@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--external css-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dashboardstyle.css">
+ </head>
+ <body>
+  <!--header-->
+  <script src="header.js"></script>
+  <!--acount info-->
+  <div id="account_info">
+   <h1>Welcome to limamenit.net</h1>
+   Total Point <div class="var" id="total_point">0</div><script>if (sessionStorage.getItem("point") == null) {sessionStorage.setItem("point", 0)}</script>
+   <button><a href="point.html" class="disguised_link">More Info</a></button>
+  </div>
+  <hr>
+  <!--menu-->
+  <div class="container-fluid" id="menu">
+   <h1 class="text-center">Buat Menu Anda Sendiri</h1>
+   <h3>Makanan Pokok</h3>
+   <div class="row">
+    <div class="col container">
+     <div class="row">
+      <div class="col space-10" style="width:203px;">
+       <img src="asset/Nasi.jpg" alt="nasi putih" width="200" height="130"><br>
+       <button onclick="sessionStorage.setItem('menu', 'nasi'); window.open('menu_detail.html');">See details</button><br>
+       Jumlah: <input type="number" class="jumlah posint">
+      </div>
+      <div class="col" id="nasi">
+       Nasi Putih<br>
+       Kalori: <span class="kalori">160</span> kkal<br>
+       Point: <span class="point">5</span><br>
+       Harga: Rp <span class="harga">5000</span>
+      </div>
+     </div>
+    </div>
+    <div class="col container">
+     <div class="row">
+      <div class="col space-10" style="width:203px;">
+       <img src="asset/Spaghetti bolognese.jpeg" alt="spaghetti bolognese" width="200" height="150"><br>
+       <button onclick="sessionStorage.setItem('menu', 'spaghetti'); window.open('menu_detail.html');">See details</button><br>
+       Jumlah: <input type="number" class="jumlah posint">
+      </div>
+      <div class="col" id="spaghetti">
+       Spaghetti Bolognese<br>
+       Kalori: <span class="kalori">370</span> kkal<br>
+       Point: <span class="point">10</span><br>
+       Harga: Rp <span class="harga">20000</span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <h3>Lauk</h3>
+   <div class="row">
+    <div class="col container">
+     <div class="row">
+      <div class="col space-10" style="width:203px;">
+       <img src="asset/Rendang.jpg" alt="rendang" width="200" height="133"><br>
+       <button onclick="sessionStorage.setItem('menu', 'rendang'); window.open('menu_detail.html');">See details</button><br>
+       Jumlah: <input type="number" class="jumlah posint">
+      </div>
+      <div class="col" id="rendang">
+       Rendang<br>
+       Kalori: <span class="kalori">195</span> kkal<br>
+       Point: <span class="point">5</span><br>
+       Harga: Rp <span class="harga">10000</span>
+      </div>
+     </div>
+    </div>
+    <div class="col container">
+     <div class="row">
+      <div class="col space-10" style="width:203px;">
+       <img src="asset/Chicken steak.jpg" alt="chicken steak" width="200" height="133"><br>
+       <button onclick="sessionStorage.setItem('menu', 'steak'); window.open('menu_detail.html');">See details</button><br>
+       Jumlah: <input type="number" class="jumlah posint">
+      </div>
+      <div class="col" id="steak">
+       Chicken Steak<br>
+       Kalori: <span class="kalori">165</span> kkal<br>
+       Point: <span class="point">5</span><br>
+       Harga: Rp <span class="harga">10000</span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <h3>Sayur</h3>
+   <div class="row sehat">
+    <div class="col container">
+     <div class="row">
+      <div class="col space-10" style="width:203px;">
+       <img src="asset/Brokoli.jpg" alt="cah brokoli" width="200" height="133"><br>
+       <button onclick="sessionStorage.setItem('menu', 'brokoli'); window.open('menu_detail.html');">See details</button><br>
+       Jumlah: <input type="number" class="jumlah posint">
+      </div>
+      <div class="col" id="brokoli">
+       Cah Brokoli<br>
+       Kalori: <span class="kalori">34</span> kkal<br>
+       Point: <span class="point">10</span><br>
+       Harga: Rp <span class="harga">7000</span>
+      </div>
+     </div>
+    </div>
+    <div class="col container">
+     <div class="row">
+      <div class="col space-10" style="width:203px;">
+       <img src="asset/Kangkung.jpg" alt="tumis kangkung" width="200" height="139"><br>
+       <button onclick="sessionStorage.setItem('menu', 'kangkung'); window.open('menu_detail.html');">See details</button><br>
+       Jumlah: <input type="number" class="jumlah posint">
+      </div>
+      <div class="col" id="kangkung">
+       Tumis Kangkung<br>
+       Kalori: <span class="kalori">28</span> kkal<br>
+       Point: <span class="point">15</span><br>
+       Harga: Rp <span class="harga">3000</span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <h3>Buah</h3>
+   <div class="row sehat">
+    <div class="col container">
+     <div class="row">
+      <div class="col space-10" style="width:203px;">
+       <img src="asset/Pisang.jpg" alt="pisang" width="200" height="150"><br>
+       <button onclick="sessionStorage.setItem('menu', 'pisang'); window.open('menu_detail.html');">See details</button><br>
+       Jumlah: <input type="number" class="jumlah posint">
+      </div>
+      <div class="col" id="pisang">
+       Pisang<br>
+       Kalori: <span class="kalori">99</span> kkal<br>
+       Point: <span class="point">15</span><br>
+       Harga: Rp <span class="harga">2000</span>
+      </div>
+     </div>
+    </div>
+    <div class="col container">
+     <div class="row">
+      <div class="col space-10" style="width:203px;">
+       <img src="asset/Apel.jpg" alt="apel" width="200" height="133"><br>
+       <button onclick="sessionStorage.setItem('menu', 'apel'); window.open('menu_detail.html');">See details</button><br>
+       Jumlah: <input type="number" class="jumlah posint">
+      </div>
+      <div class="col" id="apel">
+       Apel<br>
+       Kalori: <span class="kalori">40</span> kkal<br>
+       Point: <span class="point">10</span><br>
+       Harga: Rp <span class="harga">5000</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <hr>
+  <div class="container">
+  <div class="row">
+   <div class="col">
+    Total Kalori: <span id="total_kalori" class="var"></span>
+   </div>
+   <div class="col">
+    Harga Total : <span id="total_harga" class="var"></span><br>
+    <button id="order"><span>Order</span></button>
+   </div>
+  </div>
+  </div><br>
+  <div id="comment"></div>
+  <div id="success"></div>
+  <script src="js/element_manipulator.js"></script>
+  <script src="js/dashboardjs.js"></script>
+  <script src="footer.js"></script>
+ </body>
+</html>

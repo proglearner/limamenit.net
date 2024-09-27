@@ -1,0 +1,28 @@
+#banner_container {
+ background-color:#fff;
+ overflow:hidden;
+ height:40%;
+}
+#banner {
+ top:20%;
+ position:relative;
+}
+#about p {
+ font-size:20px;
+}
+#testimoni a {
+ color:blue;
+ text-decoration:underline;
+}
+#error {
+ color:red;
+}
+#login tr, #login input[type="text"] {
+ width:100%;
+}
+#login td {
+ width:75%;
+}
+#login td:has(label), #login td:has(span) {
+ text-align:justify;
+}
