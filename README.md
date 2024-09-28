@@ -15,6 +15,7 @@ Homepage terdiri dari:
 + Testimoni: beberapa testimoni dari murid, guru dan pemilik kantin mengenai keunggulan limaMenit.net
 + Artikel: studi literatur mengenai Pola Makan Berkelanjutan
 + Login box: karena masih merupakan website contoh, boleh memasukkan NIS (Nomor Induk Siswa) dan password apa saja. Namun jika tidak memasukkan NIS dan password, akan muncul pesan error. Ketika di-submit, maka hasilnya tidak bisa diambil di server karena dalam program javascript js/indexjs.js sudah dilakukan preventDefault ketika disubmit.
+![TEST]("https://myoctocat.com/assets/images/base-octocat.svg")
 ![Home-Desktop]("/README.md asset/Home-Desktop.png")
 ![Home-Mobile]("/README.md asset/Home-1-Mobile.png")
 ![Home-Mobile]("/README.md asset/Home-2-Mobile.png")
