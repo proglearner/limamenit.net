@@ -8,7 +8,6 @@ function count () {
  });
  document.querySelector ("#total_kalori").innerHTML = tkal;
  document.querySelector ("#total_harga").innerHTML = thar;
- comment.style.border = "1px solid #000";
  s = 0;
  sehat.forEach (function (item) {
   if (Number(item.value) > 0) {
@@ -69,7 +68,7 @@ order.addEventListener ("click", function () {
   document.location = 'order.html';
  }
 });
-
+const menu_d = document.querySelector ("#menu_d");
 
 function updatePoint () {
  document.querySelector ("#total_point").innerHTML = sessionStorage.getItem ("point");

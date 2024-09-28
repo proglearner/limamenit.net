@@ -1,7 +1,9 @@
+body {
+ text-align: justify;
+}
 #banner_container {
  background-color:#fff;
- overflow:hidden;
- height:40%;
+ min-height:40%;
 }
 #banner {
  top:20%;

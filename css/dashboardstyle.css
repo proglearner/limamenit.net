@@ -8,3 +8,19 @@
 .jumlah {
  width:100px;
 }
+#menu button {
+ background-color:#8bc34a;
+}
+#menu div.col-md-2 {
+ margin-left: 0;
+ width:fit-content;
+}
+#total .col {
+ margin-left: 0;
+ width:fit-content;
+}
+#menu_detail * {
+ overflow: auto;
+ width:100%;
+ height:auto;
+}

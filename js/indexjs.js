@@ -16,3 +16,10 @@ function check_login (event) {
   document.location = "dashboard.html"
  }
 }
+/*const artikel = document.querySelector ("#artikel + div");
+artikel.innerHTML += '<br><button style="display:block; margin:auto;" id="selengkapnya">Selengkapnya</button>';
+const btn_full = document.querySelector ("#selengkapnya");
+btn_full.style.position = "absolute";
+btn_full.addEventListener ("click", function () {
+ artikel.insertBefore (full, btn_full);
+});*/

@@ -13,6 +13,9 @@ body {
 .sumber a {
  font-size:5px;
 }
+#navbar * {
+ color:white;
+}
 #footer a {
  color:#fff;
 }

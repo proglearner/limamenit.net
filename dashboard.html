@@ -18,7 +18,7 @@
   <div id="account_info">
    <h1>Welcome to limamenit.net</h1>
    Total Point <div class="var" id="total_point">0</div><script>if (sessionStorage.getItem("point") == null) {sessionStorage.setItem("point", 0)}</script>
-   <button><a href="point.html" class="disguised_link">More Info</a></button>
+   <a href="point.html">Tips >></a>
   </div>
   <hr>
   <!--menu-->
@@ -26,30 +26,30 @@
    <h1 class="text-center">Buat Menu Anda Sendiri</h1>
    <h3>Makanan Pokok</h3>
    <div class="row">
-    <div class="col container">
+    <div class="col-md-2 container">
      <div class="row">
       <div class="col space-10" style="width:203px;">
-       <img src="asset/Nasi.jpg" alt="nasi putih" width="200" height="130"><br>
-       <button onclick="sessionStorage.setItem('menu', 'nasi'); window.open('menu_detail.html');">See details</button><br>
+       <img src="asset/Nasi.jpg" alt="nasi putih" width="200" height="130"><br><!--https://res.cloudinary.com/dk0z4ums3/image/upload/v1636537131/attached_image/nutrisi-dan-kalori-nasi-putih-serta-fungsinya-bagi-tubuh-0-alodokter.jpg-->
+       <button onclick="menu_d.src='asset/NASI_DETAIL.png';" data-bs-toggle="modal" data-bs-target="#menu_detail">Informasi Gizi</button><br>
        Jumlah: <input type="number" class="jumlah posint">
       </div>
       <div class="col" id="nasi">
-       Nasi Putih<br>
+       <b>Nasi Putih</b><br>
        Kalori: <span class="kalori">160</span> kkal<br>
        Point: <span class="point">5</span><br>
        Harga: Rp <span class="harga">5000</span>
       </div>
      </div>
     </div>
-    <div class="col container">
+    <div class="col-md-2 container">
      <div class="row">
       <div class="col space-10" style="width:203px;">
-       <img src="asset/Spaghetti bolognese.jpeg" alt="spaghetti bolognese" width="200" height="150"><br>
-       <button onclick="sessionStorage.setItem('menu', 'spaghetti'); window.open('menu_detail.html');">See details</button><br>
+       <img src="asset/Spaghetti bolognese.jpeg" alt="spaghetti bolognese" width="200" height="150"><br><!--https://akcdn.detik.net.id/community/media/visual/2022/01/26/resep-spaghetti-bolognese_43.jpeg?w=700&q=90-->
+       <button onclick="menu_d.src='asset/SPAGHETTI_DETAIL.png';" data-bs-toggle="modal" data-bs-target="#menu_detail">Informasi Gizi</button><br>
        Jumlah: <input type="number" class="jumlah posint">
       </div>
       <div class="col" id="spaghetti">
-       Spaghetti Bolognese<br>
+       <b>Spaghetti Bolognese</b><br>
        Kalori: <span class="kalori">370</span> kkal<br>
        Point: <span class="point">10</span><br>
        Harga: Rp <span class="harga">20000</span>
@@ -57,32 +57,33 @@
      </div>
     </div>
    </div>
+   <hr>
    <h3>Lauk</h3>
    <div class="row">
-    <div class="col container">
+    <div class="col-md-2 container">
      <div class="row">
-      <div class="col space-10" style="width:203px;">
-       <img src="asset/Rendang.jpg" alt="rendang" width="200" height="133"><br>
-       <button onclick="sessionStorage.setItem('menu', 'rendang'); window.open('menu_detail.html');">See details</button><br>
+      <div class="col space-10 " style="width:203px;">
+       <img src="asset/Rendang.jpg" alt="rendang" width="200" height="133"><br><!--https://doktersehat.com/wp-content/uploads/2018/06/Gizi-dan-cara-sehat-makan-rendang-doktersehat-1.jpg-->
+       <button onclick="menu_d.src='asset/RENDANG_DETAIL.png';" data-bs-toggle="modal" data-bs-target="#menu_detail">Informasi Gizi</button><br>
        Jumlah: <input type="number" class="jumlah posint">
       </div>
       <div class="col" id="rendang">
-       Rendang<br>
+       <b>Rendang</b><br>
        Kalori: <span class="kalori">195</span> kkal<br>
        Point: <span class="point">5</span><br>
        Harga: Rp <span class="harga">10000</span>
       </div>
      </div>
     </div>
-    <div class="col container">
+    <div class="col-md-2 container">
      <div class="row">
-      <div class="col space-10" style="width:203px;">
-       <img src="asset/Chicken steak.jpg" alt="chicken steak" width="200" height="133"><br>
-       <button onclick="sessionStorage.setItem('menu', 'steak'); window.open('menu_detail.html');">See details</button><br>
+      <div class="col space-10 " style="width:203px;">
+       <img src="asset/Chicken steak.jpg" alt="chicken steak" width="200" height="133"><br><!--https://akcdn.detik.net.id/community/media/visual/2017/12/07/777b189c-3e98-46cf-9d5d-6bf1ea306040.jpg?w=700&q=90-->
+       <button onclick="menu_d.src='asset/STEAK_DETAIL.png';" data-bs-toggle="modal" data-bs-target="#menu_detail">Informasi Gizi</button><br>
        Jumlah: <input type="number" class="jumlah posint">
       </div>
       <div class="col" id="steak">
-       Chicken Steak<br>
+       <b>Chicken Steak</b><br>
        Kalori: <span class="kalori">165</span> kkal<br>
        Point: <span class="point">5</span><br>
        Harga: Rp <span class="harga">10000</span>
@@ -90,32 +91,33 @@
      </div>
     </div>
    </div>
+   <hr>
    <h3>Sayur</h3>
    <div class="row sehat">
-    <div class="col container">
+    <div class="col-md-2 container">
      <div class="row">
-      <div class="col space-10" style="width:203px;">
-       <img src="asset/Brokoli.jpg" alt="cah brokoli" width="200" height="133"><br>
-       <button onclick="sessionStorage.setItem('menu', 'brokoli'); window.open('menu_detail.html');">See details</button><br>
+      <div class="col space-10 " style="width:203px;">
+       <img src="asset/Brokoli.jpg" alt="cah brokoli" width="200" height="133"><br><!--https://cdn.hellosehat.com/wp-content/uploads/2017/07/1b625924e1a8e042675f61639de71f93-700x467.jpg-->
+       <button onclick="menu_d.src='asset/BROKOLI_DETAIL.png';" data-bs-toggle="modal" data-bs-target="#menu_detail">Informasi Gizi</button><br>
        Jumlah: <input type="number" class="jumlah posint">
       </div>
       <div class="col" id="brokoli">
-       Cah Brokoli<br>
+       <b>Cah Brokoli</b><br>
        Kalori: <span class="kalori">34</span> kkal<br>
        Point: <span class="point">10</span><br>
        Harga: Rp <span class="harga">7000</span>
       </div>
      </div>
     </div>
-    <div class="col container">
+    <div class="col-md-2 container">
      <div class="row">
-      <div class="col space-10" style="width:203px;">
-       <img src="asset/Kangkung.jpg" alt="tumis kangkung" width="200" height="139"><br>
-       <button onclick="sessionStorage.setItem('menu', 'kangkung'); window.open('menu_detail.html');">See details</button><br>
+      <div class="col space-10 " style="width:203px;">
+       <img src="asset/Kangkung.jpg" alt="tumis kangkung" width="200" height="139"><br><!--https://cdn.hellosehat.com/wp-content/uploads/2017/06/manfaat-kangkung.jpg?w=750&q=75-->
+       <button onclick="menu_d.src='asset/KANGKUNG_DETAIL.png';" data-bs-toggle="modal" data-bs-target="#menu_detail">Informasi Gizi</button><br>
        Jumlah: <input type="number" class="jumlah posint">
       </div>
       <div class="col" id="kangkung">
-       Tumis Kangkung<br>
+       <b>Tumis Kangkung</b><br>
        Kalori: <span class="kalori">28</span> kkal<br>
        Point: <span class="point">15</span><br>
        Harga: Rp <span class="harga">3000</span>
@@ -123,32 +125,33 @@
      </div>
     </div>
    </div>
+   <hr>
    <h3>Buah</h3>
    <div class="row sehat">
-    <div class="col container">
+    <div class="col-md-2 container">
      <div class="row">
-      <div class="col space-10" style="width:203px;">
-       <img src="asset/Pisang.jpg" alt="pisang" width="200" height="150"><br>
-       <button onclick="sessionStorage.setItem('menu', 'pisang'); window.open('menu_detail.html');">See details</button><br>
+      <div class="col space-10 " style="width:203px;">
+       <img src="asset/Pisang.jpg" alt="pisang" width="200" height="150"><br><!--https://manfaat.co.id/wp-content/uploads/2015/04/manfaat-pisang-ambon.jpg-->
+       <button onclick="menu_d.src='asset/PISANG_DETAIL.png';" data-bs-toggle="modal" data-bs-target="#menu_detail">Informasi Gizi</button><br>
        Jumlah: <input type="number" class="jumlah posint">
       </div>
       <div class="col" id="pisang">
-       Pisang<br>
+       <b>Pisang</b><br>
        Kalori: <span class="kalori">99</span> kkal<br>
        Point: <span class="point">15</span><br>
        Harga: Rp <span class="harga">2000</span>
       </div>
      </div>
     </div>
-    <div class="col container">
+    <div class="col-md-2 container">
      <div class="row">
-      <div class="col space-10" style="width:203px;">
-       <img src="asset/Apel.jpg" alt="apel" width="200" height="133"><br>
-       <button onclick="sessionStorage.setItem('menu', 'apel'); window.open('menu_detail.html');">See details</button><br>
+      <div class="col space-10 " style="width:203px;">
+       <img src="asset/Apel.jpg" alt="apel" width="200" height="133"><br><!--https://res.cloudinary.com/dk0z4ums3/image/upload/v1630331721/attached_image/jarang-bertemu-dokter-berkat-manfaat-apel-0-alodokter.jpg-->
+       <button onclick="menu_d.src='asset/APEL_DETAIL.png';" data-bs-toggle="modal" data-bs-target="#menu_detail">Informasi Gizi</button><br>
        Jumlah: <input type="number" class="jumlah posint">
       </div>
       <div class="col" id="apel">
-       Apel<br>
+       <b>Apel</b><br>
        Kalori: <span class="kalori">40</span> kkal<br>
        Point: <span class="point">10</span><br>
        Harga: Rp <span class="harga">5000</span>
@@ -158,19 +161,62 @@
    </div>
   </div>
   <hr>
-  <div class="container">
+  <div class="container" id="total">
   <div class="row">
    <div class="col">
     Total Kalori: <span id="total_kalori" class="var"></span>
    </div>
    <div class="col">
     Harga Total : <span id="total_harga" class="var"></span><br>
-    <button id="order"><span>Order</span></button>
+    <button id="order" style="margin-top:20px;"><span>Order</span></button>
    </div>
   </div>
   </div><br>
-  <div id="comment"></div>
+  <table>
+   <tr>
+    <td>
+     <img src="asset/comment.png" width="50" height"50"><!--<https://www.freepik.com/icon/bulb_16382001#fromView=keyword&page=1&position=2&uuid=6b8c0e4d-a93b-4684-ae15-1df8a739f99b
+Icon by graphicmall-->
+    </td>
+    <td>
+     <div id="comment" style="display:inline-block;"></div>
+    </td>
+   </tr>
+  </table>
   <div id="success"></div>
+  <div class="modal modal-lg fade" id="menu_detail">
+   <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button class="btn-close" data-bs-dismiss="modal"></button>
+     </div>
+     <div class="modal-body">
+      <img id="menu_d"></img>
+      <!--
+       GAMBAR:
+       Nasi : https://res.cloudinary.com/dk0z4ums3/image/upload/v1636537131/attached_image/nutrisi-dan-kalori-nasi-putih-serta-fungsinya-bagi-tubuh-0-alodokter.jpg
+       Spaghetti Bolognese : https://akcdn.detik.net.id/community/media/visual/2022/01/26/resep-spaghetti-bolognese_43.jpeg?w=700&q=90
+       Rendang : https://doktersehat.com/wp-content/uploads/2018/06/Gizi-dan-cara-sehat-makan-rendang-doktersehat-1.jpg
+       Chicken Steak : https://akcdn.detik.net.id/community/media/visual/2017/12/07/777b189c-3e98-46cf-9d5d-6bf1ea306040.jpg?w=700&q=90
+       Brokoli : https://cdn.hellosehat.com/wp-content/uploads/2017/07/1b625924e1a8e042675f61639de71f93-700x467.jpg
+       Kangkung : https://cdn.hellosehat.com/wp-content/uploads/2017/06/manfaat-kangkung.jpg?w=750&q=75
+       Pisang Ambon : https://manfaat.co.id/wp-content/uploads/2015/04/manfaat-pisang-ambon.jpg
+       Apel : https://res.cloudinary.com/dk0z4ums3/image/upload/v1630331721/attached_image/jarang-bertemu-dokter-berkat-manfaat-apel-0-alodokter.jpg
+
+       INFORMASI GIZI:
+       Nasi : https://www.alodokter.com/nutrisi-dan-kalori-nasi-putih-serta-fungsinya-bagi-tubuh
+       Spaghetti Bolognese : https://www.fatsecret.co.id/kalori-gizi/yummy-choice/spaghetti-bolognese/1-porsi
+       Rendang : https://www.fatsecret.co.id/kalori-gizi/umum/rendang
+       Chicken Steak : https://www.fatsecret.co.id/kalori-gizi/umum/daging-dada-ayam-(ayam-pedaging-dipanggang-dimasak)
+       Brokoli : https://hellosehat.com/nutrisi/fakta-gizi/10-manfaat-brokoli-anti-kanker-kesehatan-hamil/
+       Kangkung : https://hellosehat.com/nutrisi/fakta-gizi/manfaat-kangkung-buat-kesehatan/
+       Pisang Ambon : https://manfaat.co.id/manfaat-pisang-ambon
+       Apel : https://www.alodokter.com/jarang-bertemu-dokter-berkat-manfaat-apel
+      -->
+     </div>
+    </div>
+   </div>
+  </div>
   <script src="js/element_manipulator.js"></script>
   <script src="js/dashboardjs.js"></script>
   <script src="footer.js"></script>
