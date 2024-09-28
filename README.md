@@ -15,12 +15,12 @@ Homepage terdiri dari:
 + Testimoni: beberapa testimoni dari murid, guru dan pemilik kantin mengenai keunggulan limaMenit.net
 + Artikel: studi literatur mengenai Pola Makan Berkelanjutan
 + Login box: karena masih merupakan website contoh, boleh memasukkan NIS (Nomor Induk Siswa) dan password apa saja. Namun jika tidak memasukkan NIS dan password, akan muncul pesan error. Ketika di-submit, maka hasilnya tidak bisa diambil di server karena dalam program javascript js/indexjs.js sudah dilakukan preventDefault ketika disubmit.
-![Home-Desktop](https://github.com/proglearner/limamenit.net/blob/main/README.md%20asset/Home-Desktop.png)
+![Home-Desktop](README.md%20asset/Home-Desktop.png)
 ![Home-Mobile](README.md%20asset/Home-1-Mobile.png)
-![Home-Mobile]("/README.md asset/Home-2-Mobile.png")
+![Home-Mobile](README.md%20asset/Home-2-Mobile.png)
 
 ### Order Page
-Berbagai menu dapat dipilih di Order Page. Menu dibagi dalam kategori makanan pokok, lauk, sayur dan buah. Setiap menu memiliki point dan detail informasi gizi. Point lebih besar diberikan kepada pemesan buah dan sayur lokal. Terdapat pula perhitungan total kalori, total harga dan total point. 
+Berbagai menu dapat dipilih di Order Page. Menu dibagi dalam kategori makanan pokok, lauk, sayur dan buah. Setiap menu memiliki point dan detail informasi gizi. ![Menu_Detail-Desktop.png](README.md%20asset/Menu_Detail-Desktop.png) Point lebih besar diberikan kepada pemesan buah dan sayur lokal. Terdapat pula perhitungan total kalori, total harga dan total point. 
 Berdasarkan total kalori akan ada pesan yang memotivasi pemesanan makanan sehat sebagai berikut:
 + Jika total kalori > 600 kkal
   “Wow kamu lagi lapar banget ya? Imbangi dengan olahraga ya buat bakar kalorinya”
@@ -32,6 +32,11 @@ Berdasarkan total kalori akan ada pesan yang memotivasi pemesanan makanan sehat 
   “Yakin ga mau tambah sayur dan buah?”
 Jika pesanan sudah dikonfirmasi, akan masuk ke halaman yang berisi pesan bahwa pesanan telah berhasil dilakukan.
 Informasi detail mengenai point dapat diakses jika menekan tombol **Tips >>** pada total point.
+![Order-Desktop.png](README.md%20asset/Dashboard-1-Desktop.png)
+![Order-Desktop.png](README.md%20asset/Dashboard-2-Desktop.png)
+![Order-Mobile.png](README.md%20asset/Dashboard-1-Mobile.png)
+![Order-Mobile.png](README.md%20asset/Dashboard-2-Mobile.png)
+![Order-Mobile.png](README.md%20asset/Dashboard-3-Mobile.png)
 
 ### Detail Info Point
 Terdapat info total point dan pesan motivasi untuk memesan buah dan sayur lokal.
@@ -40,5 +45,10 @@ Berbagai hadiah ditawarkan jika sudah mengumpulkan point sebagai berikut:
 + 1000 point Free chocolate/ strawberry milk
 + 5000 point Cinema Ticket
 Jika point sudah ditukarkan ke kantin, maka total point akan berkurang
+![Point-Desktop.png](README.md%20asset/Point-1-Desktop.png)
+![Point-Mobile.png](README.md%20asset/Point-1-Mobile.png)
+![Point-Mobile.png](README.md%20asset/Point-2-Mobile.png)
 
 ### Lembar Pesanan Telah Berhasil Dilakukan
+![Order-Desktop.png](README.md%20asset/Order-Desktop.png)
+![Order-Mobile.png](README.md%20asset/Order-Mobile.png)
