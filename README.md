@@ -45,7 +45,7 @@ Berbagai hadiah ditawarkan jika sudah mengumpulkan point sebagai berikut:
 + 1000 point Free chocolate/ strawberry milk
 + 5000 point Cinema Ticket
 Jika point sudah ditukarkan ke kantin, maka total point akan berkurang
-![Point-Desktop.png](README.md%20asset/Point-1-Desktop.png)
+![Point-Desktop.png](README.md%20asset/Point-Desktop.png)
 ![Point-Mobile.png](README.md%20asset/Point-1-Mobile.png)
 ![Point-Mobile.png](README.md%20asset/Point-2-Mobile.png)
 
