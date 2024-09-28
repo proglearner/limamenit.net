@@ -15,7 +15,9 @@ Homepage terdiri dari:
 + Testimoni: beberapa testimoni dari murid, guru dan pemilik kantin mengenai keunggulan limaMenit.net
 + Artikel: studi literatur mengenai Pola Makan Berkelanjutan
 + Login box: karena masih merupakan website contoh, boleh memasukkan NIS (Nomor Induk Siswa) dan password apa saja. Namun jika tidak memasukkan NIS dan password, akan muncul pesan error. Ketika di-submit, maka hasilnya tidak bisa diambil di server karena dalam program javascript js/indexjs.js sudah dilakukan preventDefault ketika disubmit.
-![Home-Desktop]("README.md asset/Home-Desktop.png")
+![Home-Desktop]("/README.md asset/Home-Desktop.png")
+![Home-Mobile]("/README.md asset/Home-1-Mobile.png")
+![Home-Mobile]("/README.md asset/Home-2-Mobile.png")
 
 ### Order Page
 Berbagai menu dapat dipilih di Order Page. Menu dibagi dalam kategori makanan pokok, lauk, sayur dan buah. Setiap menu memiliki point dan detail informasi gizi. Point lebih besar diberikan kepada pemesan buah dan sayur lokal. Terdapat pula perhitungan total kalori, total harga dan total point. 
