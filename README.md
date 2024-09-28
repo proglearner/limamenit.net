@@ -1,4 +1,4 @@
-#About limaMenit.net
+# About limaMenit.net
 
 Telat masuk kelas karena lama antri di kantin?? Atau kehabisan makanan favorit di kantin sekolah? limaMenit.net adalah sebuah website yang merupakan solusi untuk memesan makanan di kantin sekolah yang **cepat dan sehat.** Murid dapat memesan makanan kantin sehari sebelumnya sehingga keesokan harinya makanan dapat langsung disiapkan dan disantap di jam istirahat.
 
@@ -9,14 +9,14 @@ Telat masuk kelas karena lama antri di kantin?? Atau kehabisan makanan favorit d
 + __Pengingat untuk memesan sayur dan buah__ jika belum memasukannya di dalam menu pesanan
 + __Informasi gizi__ untuk setiap menu
 
-###Homepage
+### Homepage
 Homepage terdiri dari:
 + About us: sekilas info mengenai limaMenit.net
 + Testimoni: beberapa testimoni dari murid, guru dan pemilik kantin mengenai keunggulan limaMenit.net
 + Artikel: studi literatur mengenai Pola Makan Berkelanjutan
 + Login box: karena masih merupakan website contoh, boleh memasukkan NIS (Nomor Induk Siswa) dan password apa saja. Namun jika tidak memasukkan NIS dan password, akan muncul pesan error. Ketika di-submit, maka hasilnya tidak bisa diambil di server karena dalam program javascript js/indexjs.js sudah dilakukan preventDefault ketika disubmit.
 
-###Order Page
+### Order Page
 Berbagai menu dapat dipilih di Order Page. Menu dibagi dalam kategori makanan pokok, lauk, sayur dan buah. Setiap menu memiliki point dan detail informasi gizi. Point lebih besar diberikan kepada pemesan buah dan sayur lokal. Terdapat pula perhitungan total kalori, total harga dan total point. 
 Berdasarkan total kalori akan ada pesan yang memotivasi pemesanan makanan sehat sebagai berikut:
 + Jika total kalori > 600 kkal
@@ -30,7 +30,7 @@ Berdasarkan total kalori akan ada pesan yang memotivasi pemesanan makanan sehat 
 Jika pesanan sudah dikonfirmasi, akan masuk ke halaman yang berisi pesan bahwa pesanan telah berhasil dilakukan.
 Informasi detail mengenai point dapat diakses jika menekan tombol **Tips >>** pada total point.
 
-###Detail Info Point
+### Detail Info Point
 Terdapat info total point dan pesan motivasi untuk memesan buah dan sayur lokal.
 Berbagai hadiah ditawarkan jika sudah mengumpulkan point sebagai berikut:
 + 500 point Free Fruit
@@ -38,4 +38,4 @@ Berbagai hadiah ditawarkan jika sudah mengumpulkan point sebagai berikut:
 + 5000 point Cinema Ticket
 Jika point sudah ditukarkan ke kantin, maka total point akan berkurang
 
-###Lembar Pesanan Telah Berhasil Dilakukan
+### Lembar Pesanan Telah Berhasil Dilakukan
