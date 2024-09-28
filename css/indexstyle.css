@@ -9,12 +9,13 @@ body {
  top:20%;
  position:relative;
 }
-#about p {
- font-size:20px;
-}
-#testimoni a {
+#testimoni+div a {
  color:blue;
  text-decoration:underline;
+}
+#testimoni+div img {
+ display:block;
+ margin:auto;
 }
 #error {
  color:red;

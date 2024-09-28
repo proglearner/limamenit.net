@@ -15,7 +15,7 @@ if (docname == "index.html") {
  navopt.innerHTML = '<li class="nav-item"><a class="nav-link" href="#">Home</a></li><li class="nav-item"><a class="nav-link" href="#about">About Us</a></li><li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li><li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li><li class="nav-item"><a class="nav-link" id="acc_home"></a></li>';
  const acc_home = document.querySelector ("#acc_home");
  if (sessionStorage.getItem("account") != null) {
-  acc_home.innerHTML = "Dashboard";
+  acc_home.innerHTML = "Order";
   acc_home.href = "dashboard.html";
  } else {
   acc_home.innerHTML = "Login";
