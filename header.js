@@ -22,7 +22,11 @@ if (docname == "index.html") {
   acc_home.href = "#login";
  }
 } else {
- navopt.innerHTML = '<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><span id="logout" class="nav-link">Logout</span></li>'
+ navopt.innerHTML = '<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>';
+ if (docname == "point.html") {
+  navopt.innerHTML += '<li class="nav-item"><a class="nav-link" href="dashboard.html">Order</a></li>';
+ }
+ navopt.innerHTML += '<li class="nav-item"><span id="logout" class="nav-link">Logout</span></li>';
  const logout = document.querySelector ("#logout");
  logout.addEventListener ("click", function logout () {
   sessionStorage.clear();
