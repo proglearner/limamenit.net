@@ -1,4 +1,4 @@
-# About limaMenit.net
+# About limaMenit.net (Dapat juga diakses melalui https://yourlifeproject.id/limamenit/)
 
 Telat masuk kelas karena lama antri di kantin?? Atau kehabisan makanan favorit di kantin sekolah? limaMenit.net adalah sebuah website yang merupakan solusi untuk memesan makanan di kantin sekolah yang **cepat dan sehat.** Murid dapat memesan makanan kantin sehari sebelumnya sehingga keesokan harinya makanan dapat langsung disiapkan dan disantap di jam istirahat.
 
