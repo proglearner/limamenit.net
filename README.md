@@ -31,7 +31,7 @@ Berdasarkan total kalori akan ada pesan yang memotivasi pemesanan makanan sehat 
 + Kalau belum memesan sayur dan buah
   “Yakin ga mau tambah sayur dan buah?”
 Jika pesanan sudah dikonfirmasi, akan masuk ke halaman yang berisi pesan bahwa pesanan telah berhasil dilakukan.
-Informasi detail mengenai point dapat diakses jika menekan tombol **Tips >>** pada total point.
+Informasi detail mengenai point dapat diakses jika menekan tombol **Tukarkan Point >>** pada total point.
 ![Order-Desktop.png](README.md%20asset/Dashboard-1-Desktop.png)
 ![Order-Desktop.png](README.md%20asset/Dashboard-2-Desktop.png)
 ![Order-Mobile.png](README.md%20asset/Dashboard-1-Mobile.png)
