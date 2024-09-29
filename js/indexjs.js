@@ -24,3 +24,7 @@ artikel_btn.addEventListener ("click", function () {
   artikel_btn.innerHTML = "Selengkapnya";
  }
 });
+const login_confirm = document.querySelector ("#login_confirm");
+if (sessionStorage.getItem ('account') != null) {
+ login_confirm.value = "Ganti Akun";
+}
