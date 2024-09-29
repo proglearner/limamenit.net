@@ -9,6 +9,7 @@ rewards.forEach (function (item) {
   pts = Number(pts);
   if (sessionStorage.getItem('point') >= pts) {
    sessionStorage.setItem('point', sessionStorage.getItem('point')-pts);
+   alert (`Selamat! Anda telah berhasil menukarkan point anda! Point anda berkurang sebanyak ${pts}`);
   }
  });
 });
@@ -25,7 +26,7 @@ function updatePoint () {
   if (Number(String (item.parentElement.id).replace("a", "")) > sessionStorage.getItem("point")) {
    item.innerHTML = "<br>Yah... Pointmu belum cukup untuk mendapatkan aku";
   } else {
-   item.innerHTML = "<br>Klik gambar untuk mendapatkan aku!"
+   item.innerHTML = "<br>Klik gambar untuk mendapatkan aku!";
   }
  });
  requestAnimationFrame (updatePoint);
