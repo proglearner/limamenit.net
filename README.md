@@ -52,3 +52,9 @@ Jika point sudah ditukarkan ke kantin, maka total point akan berkurang
 ### Lembar Pesanan Telah Berhasil Dilakukan
 ![Order-Desktop.png](README.md%20asset/Order-Desktop.png)
 ![Order-Mobile.png](README.md%20asset/Order-Mobile.png)
+
+# Bukti Google Lighthouse
+![index.html Google Lighthouse](README.md%20asset/index-Google%20Lighthouse)
+![dashboard.html Google Lighthouse](README.md%20asset/dashboard-Google%20Lighthouse)
+![point.html Google Lighthouse](README.md%20asset/point-Google%20Lighthouse)
+![order.html Google Lighthouse](README.md%20asset/order-Google%20Lighthouse)
