@@ -1,31 +1,31 @@
 body {
- text-align: justify;
+  text-align: justify;
 }
 #banner_container {
- background-color:#fff;
- min-height:40%;
+  background-color:#fff;
+  min-height:40%;
 }
 #banner {
- top:20%;
- position:relative;
+  top:20%;
+  position:relative;
 }
 #testimoni+div a {
- color:blue;
- text-decoration:underline;
+  color:blue;
+  text-decoration:underline;
 }
 #testimoni+div img {
- display:block;
- margin:auto;
+  display:block;
+  margin:auto;
 }
 #error {
- color:red;
+  color:red;
 }
 #login tr, #login input[type="text"] {
- width:100%;
+  width:100%;
 }
 #login td {
- width:75%;
+  width:75%;
 }
 #login td:has(label), #login td:has(span) {
- text-align:justify;
+  text-align:justify;
 }
