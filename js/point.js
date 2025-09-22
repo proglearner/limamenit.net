@@ -2,6 +2,7 @@ const banana = document.querySelector ("#a500");
 const milk = document.querySelector ("#a1000");
 const ticket = document.querySelector ("#a5000");
 const rewards = [banana, milk, ticket];
+pbcs = [];
 rewards.forEach (function (item) {
   item.addEventListener ("click", function () {
     let pts = item.id;
@@ -12,14 +13,12 @@ rewards.forEach (function (item) {
       alert (`Selamat! Anda telah berhasil menukarkan point anda! Point anda berkurang sebanyak ${pts}`);
     }
   });
-});
-pbcs = [];
-rewards.forEach (function (item) {
-  let pbc = document.createElement ("span");
+  let pbc = document.createElement("span");
   pbc.className = "pbc";
   pbcs.push (pbc);
   item.appendChild (pbc);
 });
+
 function updatePoint () {
   document.querySelector ("#total_point").innerHTML = sessionStorage.getItem ("point");
   pbcs.forEach (function (item) {

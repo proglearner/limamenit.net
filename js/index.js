@@ -16,6 +16,11 @@ function check_login (event) {
     document.location = "dashboard.html"
   }
 }
+const login_confirm = document.querySelector ("#login_confirm");
+if (sessionStorage.getItem ('account') != null) {
+  login_confirm.value = "Ganti Akun";
+}
+
 const artikel_btn = document.querySelector ("#selengkapnya_artikel");
 artikel_btn.addEventListener ("click", function () {
   if (artikel_btn.innerHTML == "Selengkapnya") {
@@ -24,7 +29,3 @@ artikel_btn.addEventListener ("click", function () {
     artikel_btn.innerHTML = "Selengkapnya";
   }
 });
-const login_confirm = document.querySelector ("#login_confirm");
-if (sessionStorage.getItem ('account') != null) {
-  login_confirm.value = "Ganti Akun";
-}

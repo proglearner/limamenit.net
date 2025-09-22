@@ -1,10 +1,8 @@
-.child_right_align {
-  text-align:right;
-}
 body {
   font-size:20px;
   margin: 0 100px;
 }
+
 .sumber {
   overflow:auto;
   font-size:10px;
@@ -13,12 +11,27 @@ body {
 .sumber a {
   font-size:5px;
 }
+
 #navbar * {
   color:white;
+}
+#header a:hover {
+  background-color: #7bb33a
+}
+
+#footer {
+  text-align:left;
+  background-color:#8bc34a;
+  margin-top:50px;
+  position:absolute;
+  text-align:left;
+  width:100%;
+  left:0;
 }
 #footer a {
   color:#fff;
 }
+
 .var {
   display:inline-block;
   width:max-content;
@@ -29,15 +42,9 @@ body {
   color:#000;
   text-decoration:none;
 }
+.child_right_align {
+  text-align:right;
+}
 .space-10 * {
   margin-bottom:10px;
-}
-#footer {
-  text-align:left;
-  background-color:#8bc34a;
-  margin-top:50px;
-  position:absolute;
-  text-align:left;
-  width:100%;
-  left:0;
 }

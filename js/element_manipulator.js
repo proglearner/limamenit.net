@@ -15,10 +15,12 @@ function updateTrickSize () {
   requestAnimationFrame (updateTrickSize);
 }
 requestAnimationFrame (updateTrickSize);
+
 const posint = document.querySelectorAll (".posint");
 posint.forEach (function (item){
   item.addEventListener ("keydown", function (event) {
-    if (event.key.charCodeAt () == 43 || event.key.charCodeAt () == 45 || event.key.charCodeAt () == 46 || event.key.charCodeAt () == 101 || event.key.charCodeAt () == 69 || event.key.charCodeAt () == 44) {
+    const key_disabled = [43, 44, 45, 46, 101, 69]
+    if (key_disabled.includes(event.key.charCodeAt())) {
       event.preventDefault ();
     }
   }, false);

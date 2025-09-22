@@ -6,6 +6,7 @@ function updateTrickHeight () {
  requestAnimationFrame (updateTrickHeight);
 }
 requestAnimationFrame (updateTrickHeight);
+
 const navopt = document.querySelector (".navbar-nav");
 const path = String(document.location).split ("/");
 let docname = path[path.length-1];
@@ -26,13 +27,14 @@ if (docname == "index.html") {
  if (docname == "point.html") {
   navopt.innerHTML += '<li class="nav-item"><a class="nav-link" href="dashboard.html">Order</a></li>';
  }
- navopt.innerHTML += '<li class="nav-item"><span id="logout" class="nav-link">Logout</span></li>';
+ navopt.innerHTML += '<li class="nav-item"><a id="logout" class="nav-link">Logout</a></li>';
  const logout = document.querySelector ("#logout");
  logout.addEventListener ("click", function logout () {
   sessionStorage.clear();
   document.location = "index.html";
  });
 }
+
 const favicon = document.createElement ("link");
 favicon.rel = "icon";
 favicon.href = "asset/logo.png";

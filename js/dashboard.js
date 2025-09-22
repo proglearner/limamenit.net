@@ -26,21 +26,25 @@ function count () {
     comment.innerHTML += "Selamat makan!!";
   }
 }
+
 const kalorib = document.querySelectorAll (".kalori");
 let kalori = [];
 kalorib.forEach (function (item) {
   kalori.push (Number(item.innerText));
 });
+
 const pointb = document.querySelectorAll (".point");
 let point = [];
 pointb.forEach (function (item) {
   point.push (Number(item.innerText));
 });
+
 const hargab = document.querySelectorAll (".harga");
 let harga = [];
 hargab.forEach (function (item) {
   harga.push (Number(item.innerText));
 });
+
 const comment = document.querySelector ("#comment");
 let tkal = 0;
 let thar = 0;

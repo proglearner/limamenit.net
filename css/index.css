@@ -1,6 +1,7 @@
 body {
   text-align: justify;
 }
+
 #banner_container {
   background-color:#fff;
   min-height:40%;
@@ -9,6 +10,7 @@ body {
   top:20%;
   position:relative;
 }
+
 #testimoni+div a {
   color:blue;
   text-decoration:underline;
@@ -17,6 +19,7 @@ body {
   display:block;
   margin:auto;
 }
+
 #error {
   color:red;
 }
