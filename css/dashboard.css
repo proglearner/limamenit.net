@@ -1,5 +1,6 @@
 .col {
   width:50%;
+  margin: 10px;
 }
 #menu {
   margin:0;
@@ -10,10 +11,14 @@
 }
 #menu button {
   background-color:#8bc34a;
+  border-radius: 10px;
 }
 #menu div.col-md-2 {
   margin-left: 0;
   width:fit-content;
+}
+#menu input {
+  width: 50px;
 }
 #total .col {
   margin-left: 0;

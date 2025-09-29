@@ -32,3 +32,28 @@ body {
 #login td:has(label), #login td:has(span) {
   text-align:justify;
 }
+
+#MenuAI_btn {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1; /*appear above footer*/
+  border-radius: 20px;
+}
+#recommendation {
+  overflow: auto;
+  width: 100%;
+  height: auto;
+}
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}

@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     
+    <!-- face-api.js -->
+    <script defer src="face-api.js-master/dist/face-api.js"></script>
+    <script defer src="js/index.js"></script>
+    
     <!-- external css -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
@@ -17,6 +21,29 @@
   <body>
     <!-- header -->
     <script src="header.js"></script>
+    
+    <!-- MenuAI -->
+    <button id="MenuAI_btn" data-bs-toggle="modal" data-bs-target="#MenuAI_box">
+      <img src="asset/webcam.png" alt="Menu AI" width="50" height="50"/>
+    </button>
+    <!-- Menu Recomendation -->
+    <div class="modal modal-lg fade" id="MenuAI_box">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span id="scan_description">
+              Silakan tunggu. Kami sedang mendeteksi umur anda.
+              <div class="loader" style="display: inline-block;"></div>
+            </span>
+            <button class="btn-close" data-bs-dismiss="modal" style="width:fit-content;"></button>
+          </div>
+          <div class="modal-body">
+            <video id="video" width="720" height="560" autoplay muted></video>
+            <img id="recommendation"></img>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- banner -->
     <div class="container-fluid text-center" id="banner_container">
@@ -59,18 +86,23 @@
                 <td colspan="2"><span id="error"></span></td>
               </tr>
               <tr>
-                <td colspan="2"><span style="font-size:15px;">(Bebas memasukkan NIS dan password dalam masa percobaan)</span></td>
+                <td colspan="2">
+                  <span style="font-size:15px;">(Bebas memasukkan NIS dan password dalam masa percobaan.<br>
+                    NIS dalam bentuk angka.)
+                  </span>
+                </td>
               </tr>
             </table>
           </form>
         </div>
       </div>
     </div>
+    
     <!-- About Us -->
     <div id="about" class="section-container">
       <h1 class="text-center">About Us</h1><br>
       <h2>Welcome to Limamenit.net</h2>
-      <p>Telat masuk kelas karena lama antri di kantin?? Atau kehabisan makanan favorit di kantin sekolah? Ga jamannya lagi deh. Limamenit.net solusi pesan makanan kantin sekolah yang cepat dan sehat. Pesan sehari sebelumnya dan makanan akan freshly prepared serta siap disantap di jam istirahat kamu. Dapatkan juga info nutrisi makanan sehatmu and let’s make sustainable eating habits..</p>
+      <p>Telat masuk kelas karena lama antri di kantin?? Atau kehabisan makanan favorit di kantin sekolah? Ga jamannya lagi deh. Limamenit.net solusi pesan makanan kantin sekolah yang cepat dan sehat. Pesan sehari sebelumnya dan makanan akan freshly prepared serta siap disantap di jam istirahat kamu. Dapatkan juga info nutrisi makanan sehatmu and let’s make sustainable eating habits.</p>
     </div>
     
     <!-- Testimoni -->
@@ -145,7 +177,6 @@
     
     <!-- scripts -->
     <script src="js/element_manipulator.js"></script>
-    <script src="js/index.js"></script>
     <script src="footer.js"></script>
   </body>
 </html>
@@ -153,4 +184,6 @@
   CREDITS
     TOOLS
       Background Remover : https://remove.bg
+    IMAGES
+      Webcam Icon: https://www.flaticon.com/free-icons/webcam Webcam icons created by Smashicons - Flaticon
 -->
