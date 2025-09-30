@@ -36,9 +36,11 @@ body {
 #MenuAI_btn {
   position: fixed;
   right: 10px;
-  bottom: 10px;
+  bottom: 50vh;
   z-index: 1; /*appear above footer*/
   border-radius: 20px;
+  background: #8bc34a;
+  color: #fff;
 }
 #recommendation {
   overflow: auto;
@@ -57,3 +59,6 @@ body {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}
 }
+.bold{font-weight: bold;}
+.normal-big{font-size: 30px;}
+.dark-green{color: #005000;}

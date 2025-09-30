@@ -67,9 +67,10 @@ video.addEventListener("play", function(){
             break;
           }
           console.log(rc)
-          document.querySelector("#scan_description").innerText = 
-            "Rekomendasi Menu untuk Anda";
         }
+        document.querySelector("#scan_description").innerHTML = 
+            `Perkiraan Umur Anda: ${Math.trunc(detections[0].age)} tahun.<br>
+            <span class="bold normal-big dark-green">Rekomendasi Menu untuk Anda</span>`;
       }
     }, 100))
   })
