@@ -67,34 +67,23 @@
           <div class="col">
             <img src="asset/Spaghetti bolognese - new.png" alt="Spaghetti bolognese" width="300" height="231"><!--https://akcdn.detik.net.id/community/media/visual/2022/01/26/resep-spaghetti-bolognese_43.jpeg?w=700&q=90-->
           </div>
-          
           <!-- login -->
           <div class="col" id="login" style="display:flex; align-items:center;">
-            <form id="login_form" method="post" action="#" style="display:block;">
-              <table>
-                <tr>
-                  <td><label for="nis">NIS</label></td>
-                  <td><input type="number" id="nis" name="NIS" class="posint"></td>
-                </tr>
-                <tr>
-                  <td><label for="pwd">Password</label></td>
-                  <td><input type="password" id="pwd" name="pwd"></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class="child_right_align"><input type="submit" value="Login" id="login_confirm"></td>
-                </tr>
-                <tr rowspan="2">
-                  <td colspan="2"><span id="error"></span></td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    <span style="font-size:15px;">(Bebas memasukkan NIS dan password dalam masa percobaan.<br>
-                      NIS dalam bentuk angka.)
-                    </span>
-                  </td>
-                </tr>
-              </table>
+            <form id="login_form" method="post" action="#">
+              <div><label for="nis">NIS</label></div>
+              <div class="child_right_align"><input type="number" id="nis" name="NIS" class="posint"></div>
+              <div><label for="pwd">Password</label></div>
+              <div class="child_right_align"><input type="password" id="pwd" name="pwd"></div>
+              <div class="child_right_align" 
+                style="self-align: right; grid-column-start: 2;">
+                <input type="submit" value="Login" id="login_confirm">
+              </div>
+              <div style="grid-column-start: 1; grid-column-end: 3;">
+                <span style="font-size: 15px;">
+                  (Bebas memasukkan NIS dan password dalam masa percobaan.<br>
+                  NIS dalam bentuk angka.)
+                </span>
+              </div>
             </form>
           </div>
         </div>
