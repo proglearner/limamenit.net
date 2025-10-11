@@ -1,6 +1,6 @@
 let nte = document.createElement ("div");
 document.body.appendChild (nte);
-nte.outerHTML = '<nav class="navbar navbar-expand-sm fixed-top" style="background-color:#8bc34a; padding:0;" id="navbar"><div class="logo" style="background-color:white;"><img src="asset/logo.png" alt="logo" width="50" height="43"></div><div class="container-fluid justify-content-end"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header">≡</button><div class="collapse navbar-collapse justify-content-end" id="header"><ul class="navbar-nav"></ul></div></div></nav><div id="header_trick"></div>';
+nte.outerHTML = '<nav class="navbar navbar-expand-sm fixed-top" style="background-color:#8bc34a; padding:0;" id="navbar"><div class="logo" style="background-color:white;"><img src="asset/logo.png" alt="logo" width="50" height="43"></div><div class="container-fluid justify-content-end" style="width: fit-content; margin-right: 0;"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header" style="font-size: 40px;">≡</button><div class="collapse navbar-collapse justify-content-end" id="header"><ul class="navbar-nav"></ul></div></div></nav><div id="header_trick"></div>';
 function updateTrickHeight () {
  document.querySelector ("#header_trick").style.height = String (document.querySelector ("#navbar").clientHeight) + "px";
  requestAnimationFrame (updateTrickHeight);
