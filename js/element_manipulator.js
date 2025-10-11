@@ -5,7 +5,7 @@ sec_cont.forEach (function (item) {
   trick.style.height = String (document.querySelector ("#navbar").clientHeight) + "px";
   trick.id = item.id;
   item.id = "";
-  document.body.insertBefore (trick, item);
+  document.querySelector("body > div:not([id])").insertBefore(trick, item);
   t.push (trick);
 });
 function updateTrickSize () {
