@@ -35,7 +35,21 @@ body {
   width: 80%;
 }
 
-/*#login tr, #login input[type="text"] {
+#login_untuk_memesan{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*#login{
+  display:flex;
+  align-items:center;
+}
+
+#login tr, #login input[type="text"] {
   width:100%;
 }
 #login td {
