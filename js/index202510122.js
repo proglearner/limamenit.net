@@ -53,6 +53,9 @@ const recommendation = [
 const video = document.querySelector("#video");
 const recomm = document.querySelector("#recommendation");
 video.addEventListener("play", function(){
+    document.querySelector("#scan_description").innerHTML = 
+      `Silakan tunggu. Kami sedang mendeteksi umur anda.
+      <div class="loader" style="display: inline-block;"></div>`
     interval_ids.push(setInterval(async function(){
       const detections = await faceapi.detectAllFaces(video, new faceapi.SsdMobilenetv1Options()).withAgeAndGender();
       if(detections.length > 0) {
@@ -70,7 +73,8 @@ video.addEventListener("play", function(){
         }
         document.querySelector("#scan_description").innerHTML = 
             `Perkiraan Umur Anda: ${Math.trunc(detections[0].age)} tahun.<br>
-            <span class="bold normal-big dark-green">Rekomendasi Menu untuk Anda</span>`;
+            <span class="bold normal-big dark-green">Rekomendasi Menu untuk Anda</span><br>
+            <span class="bold">Silakan login untuk memesan</span>`;
       }
     }, 100))
   })
