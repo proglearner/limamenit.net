@@ -1,3 +1,4 @@
+let recomm_bookmark = ""; //if there isn't result yet
 const login_form = document.querySelector ("#login_form");
 const error = document.querySelector ("#error");
 login_form.addEventListener ("submit", check_login);
@@ -42,17 +43,18 @@ Promise.all([
   min <= u < max
 */
 const recommendation = [
-  [0, 10, "asset/STEAK_DETAIL.png"],
-  [10, 20, "asset/RENDANG_DETAIL.png"],
-  [20, 30, "asset/BROKOLI_DETAIL.png"],
-  [25, 30, "asset/APEL_DETAIL.png"],
-  [30, 40, "asset/KANGKUNG_DETAIL.png"],
+  [0, 10, "asset/STEAK_DETAIL.png", "#STEAK_BOOKMARK"],
+  [10, 20, "asset/RENDANG_DETAIL.png", "#RENDANG_BOOKMARK"],
+  [20, 30, "asset/BROKOLI_DETAIL.png", "#BROKOLI_BOOKMARK"],
+  [25, 30, "asset/APEL_DETAIL.png", "#APEL_BOOKMARK"],
+  [30, 40, "asset/KANGKUNG_DETAIL.png", "#KANGKUNG_BOOKMARK"],
   [40, Number.POSITIVE_INFINITY, "asset/PISANG_DETAIL.png"]
 ]
 
 const video = document.querySelector("#video");
 const recomm = document.querySelector("#recommendation");
 video.addEventListener("play", function(){
+    recomm_bookmark = ""; //if there isn't result yet
     document.querySelector("#scan_description").innerHTML = 
       `Silakan tunggu. Kami sedang mendeteksi umur anda.
       <div class="loader" style="display: inline-block;"></div>`
@@ -67,6 +69,7 @@ video.addEventListener("play", function(){
           rc = recommendation[r];
           if(rc[0] <= detections[0].age && detections[0].age < rc[1]){
             recomm.src = rc[2];
+            recomm_bookmark = rc[3];
             break;
           }
           console.log(rc)
@@ -120,6 +123,6 @@ timeouts.push(setTimeout(function(){
 }, 5000));
 recomm.addEventListener("click", function(){
   if(sessionStorage.getItem("account") != null){
-    document.location = "dashboard.html"
+    document.location = `dashboard.html${recomm_bookmark}`
   }
 })
