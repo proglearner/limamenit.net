@@ -8,11 +8,7 @@ function updateTrickHeight () {
 requestAnimationFrame (updateTrickHeight);
 
 const navopt = document.querySelector (".navbar-nav");
-const path = String(document.location).split ("/");
-let docname = path[path.length-1];
-docname = docname.split ("#");
-docname = docname[0];
-if (docname == "index.html") {
+if (docname == "/index.html") {
  navopt.innerHTML = '<li class="nav-item"><a class="nav-link" href="#">Home</a></li><li class="nav-item"><a class="nav-link" href="#about">About Us</a></li><li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li><li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li><li class="nav-item"><a class="nav-link" id="acc_home"></a></li>';
  const acc_home = document.querySelector ("#acc_home");
  if (sessionStorage.getItem("account") != null) {
@@ -24,7 +20,7 @@ if (docname == "index.html") {
  }
 } else {
  navopt.innerHTML = '<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>';
- if (docname == "point.html") {
+ if (docname == "/point.html") {
   navopt.innerHTML += '<li class="nav-item"><a class="nav-link" href="dashboard.html">Order</a></li>';
  }
  navopt.innerHTML += '<li class="nav-item"><a id="logout" class="nav-link">Logout</a></li>';
